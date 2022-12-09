@@ -77,6 +77,7 @@ function Circle(radius, center) {
     this.area = function () {
         return Math.PI * this.radius * this.radius;
     };
+    let x = 10;
 };
 let circle = new Circle(10, {x: 2, y: 5});
 console.log(circle);
@@ -95,4 +96,5 @@ let person = {
         }
     }
 }
+person.firstName = "łukasz";
 console.log(person.firstName);

@@ -18,5 +18,18 @@ switch (englishDegree.toUpperCase()) {
         break;
     default: polishDegree = undefined;
 }
-
-console.log(polishDegree)
+console.log(polishDegree);
+let degree = "3";
+switch (degree) {
+    case 1:
+        console.log("niezaliczone");
+        break;
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+        console.log("zaliczone");
+        break;
+    default:
+        console.log("nieznana ocena")
+};

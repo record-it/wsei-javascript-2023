@@ -22,7 +22,7 @@ if (firstName && firstName.length >= 2) {
 /** 
  * Czy zmienna jest liczbą różną od zera
  */
-let counter = "1"
+let counter = "1";
 if (typeof counter === 'number' && counter) {
     console.log('Liczba różna od zera')
 } else {

@@ -10,7 +10,6 @@
  */
 
 function union(a1, a2){
-    
 }
 
 const a1 = [...Array(100_000).keys()];

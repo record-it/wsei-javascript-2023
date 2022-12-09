@@ -45,11 +45,11 @@ ebook.toString = function () { return `title: ${this.title}, authors: ${this.aut
 console.log(ebook.toString());
 /**
  * Każda funkcja posiada właściwość 'prototype'. Jeśli funkcja pełni rolę konstruktora obiektów i zostanie wywołana, to
- * tej do właściwości prototypu zostanie przypisany właśnie tworzony obiekt (w polu __proto__).
+ * do tej właściwości zostanie przypisany właśnie tworzony obiekt (w polu __proto__).
  * Ustawienie pola 'prototype' funkcji zapewnia, że wszystkie tworzone tą funkcją obiekty będą posiadać prototyp z tego pola.
  * Przypisanie funkcji prototypu realizuje metoda assing prototypu Object.  
  */
-function Ebook(link){                                           //funkcja pełniąca rolę konstruktora 
+function Ebook(link){                                       //funkcja pełniąca rolę konstruktora 
     this.link = link;                
 }
 
@@ -76,6 +76,29 @@ function Rectangle(width, height){
 Object.assign(Rectangle.prototype, shape);
 let rect = new Rectangle(10, 20);
 console.log(JSON.stringify(rect));
+/**
+ * Przykład
+ */
+let abstractMessage = {
+    content: "",
+    createdAd: new Date(),
+    toString: function(){
+        return `content: ${this.content}, created: ${this.createdAd} `
+    }
+};
 
+Object.assign(Email.prototype, abstractMessage);
+
+function Email(from, to, content){
+    this.from = from;
+    this.to = to;
+    Object.getPrototypeOf(this).content = content;
+    this.toString = function(){
+        return `${Object.getPrototypeOf(this).toString()}, from: ${from}, to: ${to}`; 
+    }
+}
+
+let emailToAdam = new Email("cs@record-it.pl", "adam@op.pl", "Hello");
+console.log(emailToAdam.toString());
 
 

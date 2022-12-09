@@ -8,7 +8,7 @@ let arr2 = ['a', 'b', 'c', 'd', 'e']  //zainicjowana tablica
  * Instrukcja for
  */
 for (let i = 0; i < 10; i++) {
-    console.log(arr2[i])
+    console.log(i);
 }
 /**
  * Instrukcja for each
@@ -36,7 +36,7 @@ while (randomNumber < 0.8) {
 console.log("Instrukcja do .. while")
 do {
     console.log(randomNumber = Math.random())
-} while (randomNumber < 0.8)
+} while (randomNumber < 0.8);
 /**
  * Instrukcje break i continue
  */
@@ -51,7 +51,7 @@ console.log("Instrukcja continue")
 for (let i = 0; i < 10; i++) {
     randomNumber = Math.random()
     if (randomNumber > 0.8) {
-        continue            //pomijamy wyświetlanie liczb większych od 0.8
+        continue;               //pomijamy wyświetlanie liczb większych od 0.8
     }
     console.log(randomNumber)
 }

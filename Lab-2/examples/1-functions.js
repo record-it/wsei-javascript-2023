@@ -40,7 +40,7 @@ function add(a, b) {
  * Przykład funkcji bezargumentowej i nie zwracającej wartości
  */
 function printHello() {
-    console.log("Mello");
+    console.log("Hello");
 }
 
 /**
@@ -50,8 +50,9 @@ function printHello() {
 /**
  * Przykłady wywołań zdefiniowanych wyżej funkcji
  */
-let result = add(4, 5);
+let result = add(4, 5, 6);
 printHello();
+printHello(4,5);
 /**
  * Funkcja anonimowa może być przypisana do zmiennej. Nie posiada nazwy, a wywołanie odbywa się przez zmienną
  */
