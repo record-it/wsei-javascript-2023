@@ -27,7 +27,7 @@ console.log("hasAttribute:", head.hasAttribute('accesskey'));
  * 2. Odblokuj input o name 'title'
  * 3. Dodaj atrybut max elementu input o name 'year'
  * 4. Nadaj wartość atrybutu type pierwszemu przyciskowi na 'submit'
- * 5. Nadaj wartość atrybutu type drugiemu przyciskowi na 'clear'
+ * 5. Nadaj wartość atrybutu type drugiemu przyciskowi na 'reset'
  */
 
 
