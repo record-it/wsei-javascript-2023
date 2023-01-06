@@ -1,5 +1,5 @@
 /**
- * Napisz skrypt, który generuje losowy łańcuch o długości z zmiennej length składający się ze znaków alfabetu a-z i cyfr.
+ * Napisz skrypt, który generuje losowy łańcuch o długości w zmiennej length składający się ze znaków alfabetu a-z i cyfr.
  * Wygenerowany Łańcuch umieść w zmiennej randomString  
  */
 

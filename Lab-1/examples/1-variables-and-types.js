@@ -29,8 +29,8 @@ let active = false
 /**
  * Zmienne undefined i null
  */
-let undefindeVar;
-console.log(undefindeVar)
+let undefinedVar;
+console.log(undefinedVar)
 let nullVar = null;
 console.log(nullVar)
 /**
@@ -81,11 +81,11 @@ console.log("varLocal", varLocal);    //bez problemu można ją odoczytać poza 
  * Formatowanie liczba
  */
 let value = 11111.1111111;
-console.log(value.toString(2));             //łańcuch z liczbą w kodzie dwójkowym
-console.log(value.toString(16));            //łańcuch z liczbą w kodzie szesnastkowym
-console.log(value.toFixed(2));              //łańcuch z liczbą dziesiętną z dwoma miejscami po przecinku
-console.log(value.toPrecision(3));          //łańcuch z liczbą zapisaną w 3 cyfrach
-console.log(value.toExponential(3));        //łańcuch z liczbą w postaci wykładniczej z trzema cyframi po przecinku
+console.log(value.toString(2));                     //łańcuch z liczbą w kodzie dwójkowym
+console.log(value.toString(16));                    //łańcuch z liczbą w kodzie szesnastkowym
+console.log(value.toFixed(2));                //łańcuch z liczbą dziesiętną z dwoma miejscami po przecinku
+console.log(value.toPrecision(3));               //łańcuch z liczbą zapisaną w 3 cyfrach
+console.log(value.toExponential(3));          //łańcuch z liczbą w postaci wykładniczej z trzema cyframi po przecinku
 /**
  * Interpolacja łańcuchów
  */
