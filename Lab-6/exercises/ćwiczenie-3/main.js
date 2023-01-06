@@ -1,18 +1,21 @@
 const changeColorBtn = document.getElementById('color-btn');
-let color = '#'
+let color = '#FF5511'
 document.body.addEventListener('click', function (e){
-    const children  = e.target.parentNode.children;
-    for(let i = 0 ; i < children.length; i++){
-        if (children[i] === e.target){
-            e.target.innerText = `${Math.trunc(i / 3)}, ${i % 3}`;
-            e.target.style.background = '#FF1111';
-            return;
-        }
-    }
-    //e.preventDefault();
-}, true);
+    //wpisz kod
+});
 changeColorBtn.addEventListener('click', function(e){
-    const parent = e.currentTarget.parentNode;
-    const colorInput = parent.children.namedItem("color");
-    e.preventDefault();
-} )
+  //wpisz kod
+});
+
+/**
+ * Uzupełnij kod obu funkcji obługi zdarzeń w taki sposób aby:
+ * - kliknięcie w dowolny element div klasy "tile" wewnątrz div klasy "board" zmieniało kolor na 'color' i umieszczało wewnątrz
+ *   współrzedne klinkiętego kafelka wg wzoru
+ *   0,0    0,1     0,2
+ *   1,0    1,1     1,2
+ *   2,0    2,1     2,2
+ * - kliknięcie na przycisk w div 'header' powinno pobrać do zmiennek 'color' wartość z elementu 'input' i w tym kolorze ustawiać kolor tła przycisku
+ * - kliknięcie w dowolne inne  miejsce elementu 'body' nie powinno nic zmieniać
+ * Uwaga!
+ * nie można zmieniać pliku board.html
+ */

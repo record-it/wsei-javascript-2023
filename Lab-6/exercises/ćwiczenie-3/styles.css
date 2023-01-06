@@ -1,7 +1,4 @@
-body{
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .tile {
     border: #00BA40 solid 2px;
@@ -17,6 +14,15 @@ body{
     justify-items: center;
     grid-template-rows: repeat(3, 80px [col-start]);
     grid-template-columns: repeat(3, 80px [row-start]);
-    margin: 100px auto;
+    margin: 20px auto;
     width: 240px;
+}
+button{
+    padding: 10px;
+}
+#header{
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
