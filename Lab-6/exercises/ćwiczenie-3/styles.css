@@ -1,6 +1,6 @@
 
 
-.tile {
+div {
     border: #00BA40 solid 2px;
     text-align: center;
     margin: 2px;
@@ -16,6 +16,7 @@
     grid-template-columns: repeat(3, 80px [row-start]);
     margin: 20px auto;
     width: 240px;
+    height: 242px;
 }
 button{
     padding: 10px;

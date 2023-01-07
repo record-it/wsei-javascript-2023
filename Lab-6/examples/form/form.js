@@ -10,7 +10,7 @@
 const bookForm1 = {
     form: document.forms[0],
     titleField: document.forms[0][1],
-    editionYearField: document.forms[0][2],
+    editionYearField: document.forms[0][3],
     validate(){
         const title = this.titleField.value;
         const editionYear = Number(this.editionYearField.value);
