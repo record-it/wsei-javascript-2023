@@ -7,17 +7,10 @@
  * Obiekt document posiada kolekcję `forms`. Gdy dokument zawiera jeden formularz jest to najprostrza metoda
  * dostępu do pól.
  */
-// for (let form of document.forms){
-//     console.log(form)
-//     for(let item of form){
-//         console.log(item, item.name)
-//     }
-// }
-
 const bookForm1 = {
     form: document.forms[0],
-    titleField: document.forms[0][0],
-    editionYearField: document.forms[0][1],
+    titleField: document.forms[0][1],
+    editionYearField: document.forms[0][2],
     validate(){
         const title = this.titleField.value;
         const editionYear = Number(this.editionYearField.value);

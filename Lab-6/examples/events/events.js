@@ -13,9 +13,9 @@ const titleInput = document.getElementById("title");
  * mouseover
  * mouseout
  */
-document.body.onclick = function(event ){
-    alert("body clicked");
-}
+// document.body.onclick = function(event ){
+//     alert("body clicked");
+// }
 
 const mouseoverFunction = event => titleInput.style.backgroundColor = '#FFAABB';
 /**
