@@ -2,10 +2,9 @@
  *  Promise (obietnica) to obiekt, który opakowuje jakiś wynik działania asynchronicznego.
  *  W sytuacji rozwiązania obietnicy (np. pobrania danych z serwera)
  *  zostanie wywołany callback metody `then`. Argumentem funkcji callback jest obiekt z danymi obietnicy.
- *  W sytuacji, gdy obietnica nie jest pozytywnie rozwiązana (awaria serwera, brak żądanych danych),
+ *  W sytuacji, gdy obietnica nie jest pozytywnie rozwiązana (awaria serwera, brak żądanych danych, wyjątek),
  *  metoda `catch` wywołuje swój callback, którego argumentem jest obiekt błędu. 
  */
-
 const randomAction = new Promise((resolve, reject) => {
     const time = Math.random() * 1000;
     setTimeout(() => {

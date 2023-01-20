@@ -1,6 +1,7 @@
 const changeColorBtn = document.getElementById('color-btn');
 let color = '#FF5511'
 document.body.addEventListener('click', function (e){
+
 });
 changeColorBtn.addEventListener('click', function(e){
   //wpisz kod
