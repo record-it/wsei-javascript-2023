@@ -5,7 +5,7 @@ const option = {
         'Accept': 'application/json'
     }
 };
-fetch( url, option)
+fetch(url, option)
     .then(response => {
         if (response.ok) {
             return response.json()
@@ -13,6 +13,7 @@ fetch( url, option)
         throw "no ok with status " + response.status;
     })
     .then(json => {
+        //logika operacja na obiekcie json
         console.dir(json)
     })
     .catch(e => {
