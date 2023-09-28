@@ -69,9 +69,9 @@ console.log(letGlobal);
  */
 var globalVar = "Hoisting";
 {
-    var varLocal = 5;                   //ta zmienna nie jest lokalna, to zmienna o zasięgu całej funkcji lub skryptu
+    var varLocal = 5;                               //ta zmienna nie jest lokalna, to zmienna o zasięgu całej funkcji lub skryptu
 }
-console.log("varLocal", varLocal);      //bez problemu można ją odoczytać poza blokiem, w którym zadeklarowano
+console.log("varLocal", varLocal);                  //bez problemu można ją odoczytać poza blokiem, w którym zadeklarowano
 
 /**
  * NIE ZALECA SIĘ STOSOWANIE ZMIENNYCH VAR
