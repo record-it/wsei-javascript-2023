@@ -52,16 +52,16 @@ const earthMassConstant = 6e24;
  * Zasięg (scope) zmiennej let
  */
 
-let letGlobal = 5;              //zmienna globalna, dostępna wszędzie, istniej do końca wykonywania tego skryptu
+let letGlobal = 5;                  //zmienna globalna, dostępna wszędzie, istniej do końca wykonywania tego skryptu
 {
-    let local = 3;              //zmienne lokalna, dostępne wewnątrz bloku, znika po zakończeniu wykonywania tego bloku
+    let local = 3;                  //zmienne lokalna, dostępne wewnątrz bloku, znika po zakończeniu wykonywania tego bloku
     {
-        let subLocal = 4;       //zmienne lokalna bloku zagnieźdżonego
+        let subLocal = 4;           //zmienne lokalna bloku zagnieźdżonego
         local = subLocal;
-        console.log(local);     //ta zmienna jest tu widoczna
-        console.log(letGlobal); //zmienna globalna jest też widoczna
+        console.log(local);         //ta zmienna jest tu widoczna
+        console.log(letGlobal);     //zmienna globalna jest też widoczna
     }
-    //console.log(subLocal);    //błąd ReferenceError, tej zmiennej już nie ma, nie jest zdefiniowana
+    //console.log(subLocal);        //błąd ReferenceError, tej zmiennej już nie ma, nie jest zdefiniowana
 }
 console.log(letGlobal);
 /**
