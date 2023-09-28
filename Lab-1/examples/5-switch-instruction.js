@@ -1,8 +1,8 @@
 /**
  * Instrukcja swicth
  */
-let englishDegree = 'D'
-let polishDegree
+let englishDegree = 'D';
+let polishDegree;
 switch (englishDegree.toUpperCase()) {
     case 'A': polishDegree = 5.0
         break;
@@ -18,8 +18,11 @@ switch (englishDegree.toUpperCase()) {
         break;
     default: polishDegree = undefined;
 }
+/**
+ * Nie każdy przypadek wymaga break.
+ */
 console.log(polishDegree);
-let degree = "3";
+let degree = 3;
 switch (degree) {
     case 1:
         console.log("niezaliczone");

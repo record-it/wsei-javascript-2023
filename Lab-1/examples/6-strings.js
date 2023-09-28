@@ -1,5 +1,5 @@
 /**
- * Podstawowe funkcje łańcuchowe, w większości nie powodują zmiany łańcucha na którym się jej wywołuje,
+ * Podstawowe funkcje łańcuchowe, w większości nie powodują zmiany łańcucha, na którym się je wywołuje,
  * ale zwracany jest nowy łańcuch.
  */
 let tokens = 'A, B, C, D, E, F';
@@ -8,11 +8,11 @@ console.log(tokens.includes('A'));          //czy w łańcuchu jest znak 'A'
 console.log(tokens.startsWith('B, C'));     //czy łańcuch zaczyna się łańcuchem 'B, C'
 console.log(tokens.endsWith('F'));          //czy łańcuch kończy się łańcuchem 'F'
 console.log(tokens.replace(',', ';'));      //zamienia pierwsze wystąpienie podłańcucha ',' na łańcuch ';'
-console.log(tokens.repeat(2));       //powtarza łańcuch 2 razy
+console.log(tokens.repeat(2));              //powtarza łańcuch 2 razy
 console.log(tokens.toUpperCase());          //zwraca łańcuch dużymi literami
 console.log(tokens.toLowerCase());          //zwraca łańcuch małymi literami 
 console.log(tokens.padStart(20, ' '));      //dopełnia na początku łańcuch spacjami, aby otrzymać łańcuch o długości 20 znaków
-console.log(tokens.padEnd(20, '-'));        //dopełnia na początku łańcuch myślnikami, aby otrzymać łańcuch o długości 20 znaków
+console.log(tokens.padEnd(20, '-'));        //dopełnia na końcu łańcuch myślnikami, aby otrzymać łańcuch o długości 20 znaków
 /**
  * Interpolacja łańcuchów
 */

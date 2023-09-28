@@ -5,7 +5,7 @@ let arr1 = []                         //pusta tablica
 let arr2 = ['a', 'b', 'c', 'd', 'e']  //zainicjowana tablica 
 
 /**
- * Instrukcja for
+ * Instrukcja for, klasyczna pętla
  */
 for (let i = 0; i < 10; i++) {
     console.log(i);
@@ -21,6 +21,10 @@ for (let item of arr2) {
  */
 for (let i in arr2) {
     console.log(i)
+}
+
+for(let i in arr2){
+    console.log(arr2[i]);
 }
 /**
  * Instrukcja while - losowanie kolejnych liczb mniejszyć od 0.8
