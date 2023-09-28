@@ -52,16 +52,16 @@ const earthMassConstant = 6e24;
  * Zasięg (scope) zmiennej let
  */
 
-let letGlobal = 5;                  //zmienna globalna, dostępna wszędzie, istniej do końca wykonywania tego skryptu
+let letGlobal = 5;              //zmienna globalna, dostępna wszędzie, istniej do końca wykonywania tego skryptu
 {
-    let local = 3;                  //zmienne lokalna, dostępne wewnątrz bloku, znika po zakończeniu wykonywania tego bloku
+    let local = 3;              //zmienne lokalna, dostępne wewnątrz bloku, znika po zakończeniu wykonywania tego bloku
     {
-        let subLocal = 4;           //zmienne lokalna bloku zagnieźdżonego
+        let subLocal = 4;       //zmienne lokalna bloku zagnieźdżonego
         local = subLocal;
-        console.log(local);         //ta zmienna jest tu widoczna
-        console.log(letGlobal);     //zmienna globalna jest też widoczna
+        console.log(local);     //ta zmienna jest tu widoczna
+        console.log(letGlobal); //zmienna globalna jest też widoczna
     }
-    //console.log(subLocal);        //błąd ReferenceError, tej zmiennej już nie ma, nie jest zdefiniowana
+    //console.log(subLocal);    //błąd ReferenceError, tej zmiennej już nie ma, nie jest zdefiniowana
 }
 console.log(letGlobal);
 /**
@@ -69,9 +69,9 @@ console.log(letGlobal);
  */
 var globalVar = "Hoisting";
 {
-    var varLocal = 5;                               //ta zmienna nie jest lokalna, to zmienna o zasięgu całej funkcji lub skryptu
+    var varLocal = 5;                   //ta zmienna nie jest lokalna, to zmienna o zasięgu całej funkcji lub skryptu
 }
-console.log("varLocal", varLocal);                  //bez problemu można ją odoczytać poza blokiem, w którym zadeklarowano
+console.log("varLocal", varLocal);      //bez problemu można ją odoczytać poza blokiem, w którym zadeklarowano
 
 /**
  * NIE ZALECA SIĘ STOSOWANIE ZMIENNYCH VAR
