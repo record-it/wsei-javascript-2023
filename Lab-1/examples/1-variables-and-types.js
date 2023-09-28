@@ -87,7 +87,7 @@ console.log(value.toFixed(2));                      //łańcuch z liczbą dziesi
 console.log(value.toPrecision(3));                  //łańcuch z liczbą zapisaną w 3 cyfrach
 console.log(value.toExponential(3));                //łańcuch z liczbą w postaci wykładniczej z trzema cyframi po przecinku
 /**
- * Interpolacja łańcuchów
+ *      Interpolacja łańcuchów
  */
 let price = 5;
 const userName = "Adam";
