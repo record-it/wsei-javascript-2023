@@ -9,19 +9,19 @@ let octVar = 011;                               //w kodzie ósemkowym
 console.dir(octVar);
 let doubleVar = 1.67;
 console.log(doubleVar);                           
-let earthMass = 6e24;                            //notacja wykładnicza
+let earthMass = 6e24;                           //notacja wykładnicza
 console.log(earthMass);   
-let bigIntVar = 100000000000000000000000n;      //BigInt
+let bigIntVar = 100000000000000000000000n;        //BigInt
 console.log(bigIntVar)
 let booleanVar = true
 console.log(booleanVar);
-console.dir(bigIntVar / 10000n)                 //operacje na BigInt
+console.dir(bigIntVar / 10000n)                     //operacje na BigInt
 /**
- * Zmienne tpu String
+ * Zmienne typu String
  */
-let stringVar1 = "ABCD"                         //podwójny apostrof
-let stringVar2 = 'ABCD'                         //popjedynczy apostrof
-let stringVar3 = `ABCD`                         //backtick, interpolacja łańcuchów
+let stringVar1 = "ABCD"                           //podwójny apostrof
+let stringVar2 = 'ABCD'                           //popjedynczy apostrof
+let stringVar3 = `ABCD`                           //backtick, interpolacja łańcuchów
 /**
  * Zmienne typu boolean
  */
@@ -38,7 +38,7 @@ console.log(nullVar)
  */
 const earthMassConstant = 6e24;
 //const undefindeConstant;                        //błąd SyntaxError
-//earthMassConstant = "5";                        //błąd TypeError
+//earthMassConstant = 5;                          //błąd TypeError
 
 /**
  * Różnice między var a let
