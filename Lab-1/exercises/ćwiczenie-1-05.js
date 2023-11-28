@@ -5,9 +5,9 @@
  * opis: w wierszu poniżej `0%` na początku, `100%` na końcu i wartość paska w procentach po środku.
  * Przykład
  * Dla `n` = 36,6 i `m` = 50
- * skrypt powinien utworzyć w prograssBar łańcuch jak poniżej:
+ * skrypt powinien utworzyć w progressBar łańcuch jak poniżej:
  * |################################                  |
- * 0 %                      75%                    100%
+ * 0 %                      73%                    100%
  */
 let n = 34;
 let m = 190;

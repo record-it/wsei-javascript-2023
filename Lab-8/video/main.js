@@ -17,7 +17,7 @@ navigator.mediaDevices.getUserMedia({
                     .then(image =>
                 context.drawImage(image, 0, 0, canvas.width, canvas.height));//wyświetlenie w canvas obrazu z kamery
 
-                const src = URL.createObjectURL(blob);      //utworznie obiektu URL z obrazem migawki
+                const src = URL.createObjectURL(blob);      //utworzenie obiektu URL z obrazem migawki
                 console.log(blob.type);                     //w polu type jest rozszerzenie pliku
                 const link = document.getElementById("download");
                 link.href = src;                            //wstawienie do atrybutu href URL obrazu

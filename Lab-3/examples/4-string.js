@@ -4,7 +4,7 @@ console.log("Zamiana na małe litery: ", str.toLocaleLowerCase());
 console.log("Znak na 3 pozycji:", str.charAt(3));
 console.log("Code point na 1 pozycji", str.codePointAt(1));
 console.log("Podział na słowa:","JavaScript is cool language".split(' '));
-console.log("Podział na znaki (błędzie dzieli klastry - emotikony):", str.split(''));
+console.log("Podział na znaki (błędnie dzieli klastry - emotikony):", str.split(''));
 console.log("Ucięcie emoticony:", str.slice(1, 8));
 console.log("Emoticona zajmuje dwa znaki:", str.slice(2, 8));   
 console.log("Odwołanie do emotikony przez indeks (nie działa poprawnie):", str[0]);
