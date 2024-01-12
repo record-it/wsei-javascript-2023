@@ -1,7 +1,11 @@
 const peopleList = document.getElementById("people");
 const item = document.createElement("li");                              //tworzenie elementu
 item.innerText = "Roman";               
-peopleList.appendChild(item);                                         //dodanie elementu do rodzica
+peopleList.appendChild(item);                                           //dodanie elementu do rodzica
+const first = peopleList.children.item(1);               //pierwsze dziecko listy ul
+const second = document.createElement("li");
+second.innerText = "XXX"
+first.after(second);                                                    //wstawienie za piewszym dzieckiem nowego elementu
 peopleList.removeChild(                                                 //usunięcie elementu z rodzica    
     Array.from(peopleList.children)
     .find(item => item.textContent === "Staszek")
