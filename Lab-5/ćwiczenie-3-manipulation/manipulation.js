@@ -9,7 +9,7 @@ peopleList.removeChild(                                                 //usuni�
 console.log('parent:', peopleList.parentElement);                       //rodzic listy 'people'
 console.log('children:', peopleList.children);                          //kolekcja dzieci listy 'people'
 console.log('nextSibling:', peopleList.nextElementSibling);             //następny sąsiad listy 'people'
-console.log('prevoiusSibling:', peopleList.previousElementSibling);           
+console.log('previousSibling:', peopleList.previousElementSibling);
                                                                         //poprzedni sąsiad listy 'people'
 /**
  * Cwiczenie 3
