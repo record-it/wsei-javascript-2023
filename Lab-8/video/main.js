@@ -21,7 +21,7 @@ navigator.mediaDevices.getUserMedia({
                 console.log(blob.type);                     //w polu type jest rozszerzenie pliku
                 const link = document.getElementById("download");
                 link.href = src;                            //wstawienie do atrybutu href URL obrazu
-                link.download = "captured.png";   //nazwa pliku z rozszerzeniem
+                link.download = "captured.png";             //nazwa pliku z rozszerzeniem
             });
         setTimeout(() => {
             track.stop();                                   //zatrzymuje przekaz strumieniowy z kamery
