@@ -26,14 +26,23 @@ window.onload = function(){
     console.log('Elements li with red class %o', liElementWithRedClass);         
     //Metoda querySelectorAll zwraca listę węzłow pasujących do selektora
     const liElements = document.querySelectorAll('ul li');                      
-    const liPeopleElements = document.querySelectorAll('#people li');         //lista elementów li należących do listy o id pepople
-    console.log('li in people list', liPeopleElements);
+    const liPeopleElements = document.querySelectorAll('li:nth-child(2)');         //lista elementów li należących do listy o id pepople
+    liPeopleElements.forEach(e => console.log(e.innerText));
     /**
      * Cwiczenie 1
      * do kolejnych zmiennych przypisz
      * collection1 - elementy z name 'title' typu li 
      * collection2 - elementy li klasy 'red' będące dziećmi elementu ul z klasą 'list'
      * collection3 - elementy klasy 'bold' typu li będące dziećmi elementu o id 'people'
+     */
+
+    /**
+     * Ćwicenie 2
+     * Wybierz za pomoca selectorów
+     * elementy input typu text
+     * elementy ul występujące za h2
+     * drugie element li we wszystkich listach
+     * elementy li klasy bold
      */
     let collection1 = [];
     let collection2 = [];
@@ -54,5 +63,4 @@ window.onload = function(){
     } else {
         message += 'Test12 failed\n';
     }
-    alert( message);
 }

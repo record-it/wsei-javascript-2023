@@ -1,5 +1,5 @@
 # Ćwiczenie 1
-Zmodyfikuj plik `main-ex.js` i `index.html` w taki sposób aby:
+Napisz skrypt w  pliku `main-ex.js` i `index.html` w taki sposób aby:
 - na stronie był przycisk  `Capture`, który włacza i wyłącza przechwytywanie obrazu kamery
 - na stronie był przycisk  `Take photo`, który wykonuje migawkę i wyświetla w elemencie `canvas`
 - na stronie był input pozwalający na wpisanie nazwy pliku, do którego można zapisać obraz migawki
