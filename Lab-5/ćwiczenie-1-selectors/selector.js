@@ -18,15 +18,16 @@ window.onload = function(){
     //Metoda querySelector zwraca jeden element. Gdy wiele elementów pasuje do selektora to zwracany jest pierwszy pasujący.
     //Selektory mają taką sama postać jak w plikach css.  
     //Metody querySelectorX najlepiej sprawdzają się, gdy wyszukujemy specyficzny element na podstawie wielu cech
-    const h1Element = document.querySelector('h1');                           //pierwszy element pasujący do selektora, w tym przypadku do taga h1
-    const liElementWithRedClass = document.querySelector('ul li.red');        //pierwszy element li klasy 'red', który jest dzieckiem elementu ul
-    const liWithId = document.querySelector('#title');                        //pierwszy element o id 'title'
-    const inputWithName = document.querySelector('input[name="title"]');     //pierwszy element typu input z trybutem name równym 'title'
-    console.log('input with name', inputWithName);
+    const h1Element = document.querySelector('h1');               //pierwszy element pasujący do selektora, w tym przypadku do taga h1
+    const liElementWithRedClass = document.querySelector('ul li.red');       //pierwszy element li klasy 'red', który jest dzieckiem elementu ul
+    const liWithId = document.querySelector('#title');                       //pierwszy i jedyny element o id 'title'
+    const inputWithName = document.querySelector('input[name="title"]');     //pierwszy element typu input z atrybutem name równym 'title'
+    console.log('Input with name', inputWithName);
     console.log('Elements li with red class %o', liElementWithRedClass);         
     //Metoda querySelectorAll zwraca listę węzłow pasujących do selektora
     const liElements = document.querySelectorAll('ul li');                      
-    const liPeopleElements = document.querySelectorAll('li:nth-child(2)');         //lista elementów li należących do listy o id pepople
+    const liPeopleElements = document.querySelectorAll('li:nth-child(2)');     // lista elementów li, kóre są drugimi dziećmi
+    console.log("Seconds li elements in every ul list", liPeopleElements);
     liPeopleElements.forEach(e => console.log(e.innerText));
     /**
      * Cwiczenie 1
@@ -37,11 +38,11 @@ window.onload = function(){
      */
 
     /**
-     * Ćwicenie 2
+     * Ćwiczenie 2
      * Wybierz za pomoca selectorów
      * elementy input typu text
      * elementy ul występujące za h2
-     * drugie element li we wszystkich listach
+     * parzyste elementy li we wszystkich listach
      * elementy li klasy bold
      */
     let collection1 = [];

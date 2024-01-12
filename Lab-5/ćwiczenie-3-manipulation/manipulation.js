@@ -19,6 +19,13 @@ console.log('previousSibling:', peopleList.previousElementSibling);
 function createTable(parent, products){
     throw "not implemented";
 }
+
+/**
+ * Ćwiczenie 4
+ * 1. Za Romanem dodaj imię Anna
+ * 2. Przenieś Urszulę za Karolem
+ * 3. Usuń imiona zaczynające się literą R
+ */
 //Przykład tabeli products
 const products = [{name: "Masło", price: 8.5}, {name: "Bułka", price: 1.45}, {name: "Pomidory", price: 8.90}];
 //Przykład wywołania products

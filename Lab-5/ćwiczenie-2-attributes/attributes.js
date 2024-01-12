@@ -23,11 +23,12 @@ console.log("type:",inputTitle.type);                               //typ elemen
 console.log("hasAttribute:", head.hasAttribute('accesskey'));
 /**
  * Ćwiczenie 2
- * 1. Dodaj klasę `border` do elementu li z innerText 'Karolina'
- * 2. Odblokuj input o name 'title'
- * 3. Dodaj atrybut max elementu input o name 'year'
- * 4. Nadaj wartość atrybutu type pierwszemu przyciskowi na 'submit'
- * 5. Nadaj wartość atrybutu type drugiemu przyciskowi na 'reset'
+ * 1. Utwórz tablcię z imionami zawartymi we wszystkich elementach li o klasie `red`. Wydrukuj w konsoli.
+ * 3. Odblokuj input o name 'title'
+ * 3. Dodaj atrybut min i max elementu input o name 'year'
+ * 4. Zmień `type` pierwszego przyciskowi na 'submit'
+ * 5. Zmień  `type` drugiego przycisku na 'reset'
+ * 6. Wszystkim elementom li, które ma mają klasy `red` i zawiewrają imię żeńskie, danaj klasę green
  */
 
 
