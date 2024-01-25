@@ -1,21 +1,21 @@
 /**
     Zaprojektuj formularz tworzenia pytania testowego
-    - pole treści pytania zwsze występuje
-    - pole tytułu pytanie zawsze występuje
-    - pole typu pytania
-     1 jedna ocja do wyboru
-     2 wielokrotny wybór
-     3 pytanie z otwartą odpowiedzią
-     4 pytanie dobór  par
-     W zalezności od wyboru pola wyboru typu pytania zmienia się wygląd formularz
-        1 - dwa pola typu radiom przycisk dodaj opcję, każda opcja ma przycisk usuń
-        2 - dwa opla typu checkbox, przycisk dodaj opcję, każda opcja ma przycisk usuń
-        3 - pole tekstowe z odpowiedzią, przycisk dodaj nastepną odpowidź, każda opcja ma przycis usuń
-        4 - dwie pary pól tesktowych, przycisk dodaj następną parę, każda para ma przycisk usuń
-    Poprawne odpowiedz należy wyróżnić np. zielonym kolorem
-    Zdefiniuj funkcję walidującą każdego typu pytania, która blokue wysłamnie żądania jeśli:
-    1 - musi nbyć wybrane jedenj przycisk typu radio
+    - pole treści pytania jest wymagane
+    - pole tytułu pytania jest wymagane
+    - pole typu pytania (select)
+        1 pojedynczy wybór (wiele opcji, jedna poprawna)
+        2 wielokrotny wybór (wiele opcji, co najmniej jedna poprawna)
+        3 otwarta odpowiedź ()
+        4 dobór par ()
+     W zależności od wyboru pola wyboru typu pytania zmienia się wygląd formularza poniżej:
+        1 - dwa pola typu radio i przycisk `Dodaj opcję`, każda opcja ma przycisk `Usuń`
+        2 - dwa pola typu checkbox i przycisk `Dodaj opcję`, każda opcja ma przycisk `Usuń`
+        3 - pole tekstowe typu text area, przycisk `Dodaj odpowiedź`
+        4 - dwie pary pól tesktowych, przycisk `Dodaj parę`, każda para ma przycisk `Usuń`
+    Poprawne odpowiedź należy wyróżnić np. zielonym kolorem
+    Zdefiniuj funkcję walidującą każdego typu pytania, która blokuje wysłanie żądania jeśli:
+    1 - musi być wybrany jeden przycisk typu radio
     2 - choć jeden checkbox musi być zaznaczony
     3 - musi wystąpić choć jedna odpowiedź niepusta
-    4 - muszą wystąpić co najmniej 
+    4 - muszą wystąpić co najmniej dwie pary 
  */
