@@ -1,7 +1,7 @@
 /**
  * Kod JS można umieszczać w modułach.
- * Ponizej przykład modułu eksportującego stłą i funckję
- * W pliku module.html najduje się przykłąd importu modułów
+ * Ponizej przykład modułu eksportującego stałą i funkcję
+ * W pliku module.html znajduje się przykład importu modułów
  */
 export const name = "Karol";
 export function calculator(a, b, op){
