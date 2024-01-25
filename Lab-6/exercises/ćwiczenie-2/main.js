@@ -141,37 +141,6 @@ const operatorBtnLister = e => {
  * Nie można zmianiać pliku calculator.html!!!
  */
 window.onload = function () {
-    digitButtons.forEach(button => button.addEventListener('click', digitBtnListener))
-    operatorButtons.forEach(operator => addEventListener('click', operatorBtnLister))
-    displayClearBtn.addEventListener('click', displayClearBtnListener)
 
-    document.addEventListener('keydown', (event) => {
-        let key = event.key
-        console.log(key)
-        if (key in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]){
-            mainDisplay.addDigit(key)
-        }
-        if (key === "c" || key === "C"){
-            displayClearBtnListener()
-        }
-        if (key === ".") {
-            digitBtnListener({ target: { value: key } });
-        }
-        if (key === "Enter") {
-            operatorBtnLister({ currentTarget: { value: "=" } });
-        }
-        if (key === "+") {
-            operatorBtnLister({ currentTarget: { value: "+" } });
-        }
-        if (key === "-") {
-            operatorBtnLister({ currentTarget: { value: "-" } });
-        }
-        if (key === "*") {
-            operatorBtnLister({ currentTarget: { value: "*" } });
-        }
-        if (key === "/") {
-            operatorBtnLister({ currentTarget: { value: "/" } });
-        }
-    })
 }
 
