@@ -34,11 +34,18 @@ const calculateBtn = document.getElementById("calculateBtn");
  *         "currency": "dolar australijski",
  *         "code": "AUD",
  *         "bid": 2.9852,
- *         "ask": 3.0456
+ *          "ask": {
+ *           "value": "2.6860n",
+ *           "type": "Big Number"
+ *         }
  *       },
  *       ...
  *    }
  *  ]
+ *
+ *  W niektórych przypadakch w polach "bid" i "ask" moga pojawiać się obiekty {"value": "2.6778n", "type": "Big Number"} zamiast wartości np. 2.6860.
+ *  Należy użyć mapera podaczas deserializacji, który zamieni obiekty na wartość
+ *
  *  Wypełnij elementy `inputCode` i `outputCode` listą opcji o wartości kodów walut: USD, EUR itd.
  *  Na podstawie trybu odczytanego z pól typu radio określ tryb: sprzedaż lub kupna
  *  Na podstawie trybu kodów walut wejsciowej (inputCode) i wyjściowej (outputCode) oraz kwoty wejściowej (inputAmount) wylicz jej wartość
