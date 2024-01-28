@@ -141,6 +141,6 @@ const operatorBtnLister = e => {
  * Nie można zmianiać pliku calculator.html!!!
  */
 window.onload = function () {
-    //uzupełnij kod
+
 }
 

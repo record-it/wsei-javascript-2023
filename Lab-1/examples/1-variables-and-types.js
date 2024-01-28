@@ -9,25 +9,25 @@ let octVar = 011;                               //w kodzie ósemkowym
 console.dir(octVar);
 let doubleVar = 1.67;
 console.log(doubleVar);                           
-let earthMass = 6e24;                            //notacja wykładnicza
+let earthMass = 6e24;                           //notacja wykładnicza
 console.log(earthMass);   
-let bigIntVar = 100000000000000000000000n;      //BigInt
+let bigIntVar = 100000000000000000000000n;        //BigInt
 console.log(bigIntVar)
 let booleanVar = true
 console.log(booleanVar);
-console.dir(bigIntVar / 10000n)                 //operacje na BigInt
+console.dir(bigIntVar / 10000n)                     //operacje na BigInt
 /**
- * Zmienne tpu String
+ * Zmienne typu String
  */
-let stringVar1 = "ABCD"                         //podwójny apostrof
-let stringVar2 = 'ABCD'                         //popjedynczy apostrof
-let stringVar3 = `ABCD`                         //backtick, interpolacja łańcuchów
+let stringVar1 = "ABCD"                           //podwójny apostrof
+let stringVar2 = 'ABCD'                           //popjedynczy apostrof
+let stringVar3 = `ABCD`                           //backtick, interpolacja łańcuchów
 /**
  * Zmienne typu boolean
  */
 let active = false
 /**
- * Zmienne undefined i null
+ * Zmienne o wartośściach undefined i null
  */
 let undefinedVar;
 console.log(undefinedVar)
@@ -38,14 +38,14 @@ console.log(nullVar)
  */
 const earthMassConstant = 6e24;
 //const undefindeConstant;                        //błąd SyntaxError
-//earthMassConstant = 5                           //błąd TypeError
+//earthMassConstant = 5;                          //błąd TypeError
 
 /**
  * Różnice między var a let
  * - let ma zasięg blokowy a var funkcji
  * - var umożliwia wielokrotne deklarowanie tej samej zmiennej, let tylko raz
  * - var podlega pod hoisting (wynoszenie deklaracji na początek skryptu), let nie
- * - var obsługuje wszystkie przeglądarki (ECMAScript1), let wprowadzono w ES6, obsługują wszystkie nowe przegląradki* 
+ * - var obsługuje wszystkie przeglądarki (ECMAScript1), let wprowadzono w ES6, obsługują wszystkie nowe przeglądarki* 
  */
 
 /**
@@ -69,9 +69,9 @@ console.log(letGlobal);
  */
 var globalVar = "Hoisting";
 {
-    var varLocal = 5;           //ta zmienne nie jest lokalna, to zmienna o zasięgu całej funkcji lub skryptu
+    var varLocal = 5;                   //ta zmienna nie jest lokalna, to zmienna o zasięgu całej funkcji lub skryptu
 }
-console.log("varLocal", varLocal);    //bez problemu można ją odoczytać poza blokiem, w którym zadeklarowano
+console.log("varLocal", varLocal);      //bez problemu można ją odoczytać poza blokiem, w którym zadeklarowano
 
 /**
  * NIE ZALECA SIĘ STOSOWANIE ZMIENNYCH VAR
@@ -83,13 +83,13 @@ console.log("varLocal", varLocal);    //bez problemu można ją odoczytać poza 
 let value = 11111.1111111;
 console.log(value.toString(2));                     //łańcuch z liczbą w kodzie dwójkowym
 console.log(value.toString(16));                    //łańcuch z liczbą w kodzie szesnastkowym
-console.log(value.toFixed(2));                //łańcuch z liczbą dziesiętną z dwoma miejscami po przecinku
-console.log(value.toPrecision(3));               //łańcuch z liczbą zapisaną w 3 cyfrach
-console.log(value.toExponential(3));          //łańcuch z liczbą w postaci wykładniczej z trzema cyframi po przecinku
+console.log(value.toFixed(2));                      //łańcuch z liczbą dziesiętną z dwoma miejscami po przecinku
+console.log(value.toPrecision(3));                  //łańcuch z liczbą zapisaną w 3 cyfrach
+console.log(value.toExponential(3));                //łańcuch z liczbą w postaci wykładniczej z trzema cyframi po przecinku
 /**
- * Interpolacja łańcuchów
+ *      Interpolacja łańcuchów
  */
 let price = 5;
 const userName = "Adam";
-let message = `${userName} your price is ${price} $`;
+let message = `${userName} your price is ${price}$`;    //wewnątrz {...} można wstawić dowolne wyrażenie, które zostanie zamienione na łańcuch np. {price * 0.22}
 console.log(message);

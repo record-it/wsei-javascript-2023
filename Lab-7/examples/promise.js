@@ -23,6 +23,6 @@ randomAction
         console.log('Promise 1 (then): ', value);                     //funkcja sukcesu, obietnica spełniona
     })
     .catch(error => {
-        console.log('Promise 1 (catch): ', error);                     //funkcja obsługi błędu, obietnica nie spełniona
+        console.log('Promise 1 (catch): ', error);                    //funkcja obsługi błędu, obietnica nie spełniona
     });
 console.log("Promise 1: Statement after calling promise 1");
