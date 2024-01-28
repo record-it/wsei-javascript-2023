@@ -1,7 +1,7 @@
 /**
  * Serializacja to zamiana obiektów JS na łańcuch, który znak po znaku może zostać przesłany strumieniem.
  * Deserializacja to zamiana łańcucha na obiekt JS.
- * JSON to łańcuch opisujący obiekt JS. 
+ * JSON to łańcuch opisujący obiekt JS.
  */
 let obj = {
     authors: ["Adam", "Ewa"],
@@ -50,8 +50,9 @@ console.log(typeof parsedObj.published);
  */
 console.log("custom deserialization - conversion string properties to Date object" )
 const parsedObjWithDate = JSON.parse(objStr, (key, value) => {
+    console.log("MAP");
     if (key === "published"){               //jeśli w parsowanym JSON występuje właściwość "published"
-        return new Date(value);             //jej wartość w obiekcie zostanie zamieniona na obiekt Fate
+        return new Date(value);             //jej wartość w obiekcie zostanie zamieniona na obiekt Date
     }else {
         return value;
     }

@@ -1,5 +1,5 @@
 window.onload = function(){
-    const liCollection = document.getElementsByTagName('li');                 //kolekcja elementów z ta sama nazwa tag'a 
+    const liCollection = document.getElementsByTagName('r');                 //kolekcja elementów z ta sama nazwa tag'a 
     const redClassCollection = document.getElementsByClassName('red');        //kolekcja elementów z tą sama klasą
     const sameNameCollection = document.getElementsByName('title');           //kolekcja elementów z tym samym atrybutem 'name'
     const ulElement = document.getElementById('people');                      //element o id
@@ -20,7 +20,8 @@ window.onload = function(){
     //Metody querySelectorX najlepiej sprawdzają się, gdy wyszukujemy specyficzny element na podstawie wielu cech
     const h1Element = document.querySelector('h1');                           //pierwszy element pasujący do selektora, w tym przypadku do taga h1
     const liElementWithRedClass = document.querySelector('ul li.red');        //pierwszy element li klasy 'red', który jest dzieckiem elementu ul
-    const liWithId = document.querySelector('#title');                        //pierwszy element o id 'title'
+    const liWithId = document.querySelectorAll('#people');                        //pierwszy element o id 'title'
+    console.log("ID", liWithId);
     const inputWithName = document.querySelector('input[name="title"]');     //pierwszy element typu input z trybutem name równym 'title'
     console.log('input with name', inputWithName);
     console.log('Elements li with red class %o', liElementWithRedClass);         
